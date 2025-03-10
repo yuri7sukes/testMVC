@@ -9,9 +9,9 @@ class PageController extends Controller
         echo '1';
     }
     
-    public function show2()
+    public function act()
     {
-        echo '2';
+        return $this->render('page/act');
     }
     
 }
