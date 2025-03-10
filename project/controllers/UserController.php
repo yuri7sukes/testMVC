@@ -50,7 +50,12 @@ class UserController
 
     public function first($params)
     {
-        
+        $n = (int) $params['n'];
+        $keys = array_keys($this->users); 
+
+        for ($i = 0; $i < $n && $i < count($keys); $i++) {
+            echo $this->users[$keys[$i]]['name'] . '<br>';
+        }
 
     }
 }
